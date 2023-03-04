@@ -36,7 +36,7 @@ fileQueue.process(async (job, done) => {
       const thumbnail500 = await thumbNail(500, fileName);
       const thumbnail250 = await thumbNail(250, fileName);
       const thumbnail100 = await thumbNail(100, fileName);
-      
+
       console.log('Writing files to system');
       const image500 = `${file.localPath}_500`;
       const image250 = `${file.localPath}_250`;
@@ -49,7 +49,6 @@ fileQueue.process(async (job, done) => {
     }
   });
 });
-
 
 userQueue.process(async (job, done) => {
   const { userId } = job.data;
