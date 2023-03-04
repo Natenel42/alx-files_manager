@@ -21,6 +21,7 @@ const waitConnection = () => {
     })
 };
 
+
 (async () => {
     console.log(dbClient.isAlive());
     await waitConnection();
