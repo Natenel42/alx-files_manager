@@ -10,3 +10,4 @@ module.exports = {
       ],
     ],
 };
+//This is the babel configuration 
